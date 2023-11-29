@@ -141,3 +141,13 @@
   height: 100px;
   margin-top: 20px;
 }
+/*Mixed Reality style*/
+.mr-section{
+  display: flex;
+}
+.mr-index{
+  width: 30%;
+}
+.mr-content{
+  width: 70%;
+}
