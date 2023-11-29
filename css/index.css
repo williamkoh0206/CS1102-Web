@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+/* common style */
+
+.hidden {
+  display: none;
+}
+
+.nav-bar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  z-index: 1;
+}
+
+.topic-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.topic-nav-heading {
+  font-size: 2rem;
+}
+
+.topic-nav-info {
+  text-align: right;
+}
+
+.link-nav {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: space-evenly;
+  margin: 10px 30px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid black;
+  font-size: 2.3rem;
+}
+
+.press-me {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: orchid;
+  border: 1px;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.press-me:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* common style */
+
+/* index.html style */
+
+.project-info {
+  margin-top: 140px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.project-topic {
+  display: flex;
+  font-size: 6.5rem;
+  width: 60%;
+  border: 1px black solid;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.project-group-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  font-size: 2rem;
+}
+
+.person-info {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  border: 1px black solid;
+  padding: 8px;
+}
+
+.person-name,
+.person-SID,
+.person-contribute {
+  justify-self: start;
+}
+
+.introduction-heading {
+  margin: 10px 30px;
+  font-size: 3rem;
+  border: 1px black solid;
+  padding: 10px;
+}
+
+.introduction-content {
+  margin: 10px 30px;
+  padding: 10px;
+  border: 1px black solid;
+  z-index: 1; /* Stay on top */
+  background-color: rgba(92, 250, 242, 0.8);
+  transition: opacity 0.5s ease;
+}
+
+.introduction-content ul {
+  margin: 10px 30px;
+}
+
+/* index.html style */
+
+/* findings.html style */
+
+.page-wrapper {
+  margin-top: 140px;
+  padding: 10px 30px;
+}
+
+.before-heading {
+  border: 1px solid black;
+}
+
+.before-content {
+  border: 1px solid black;
+  height: 100px;
+  margin-top: 20px;
+}
