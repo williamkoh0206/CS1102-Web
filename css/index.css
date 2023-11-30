@@ -15,8 +15,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 140px;
+  height: 100px;
   z-index: 1;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #7fb0db;
 }
 
 .topic-nav {
@@ -39,8 +41,10 @@
   justify-content: space-evenly;
   margin: 10px 30px;
   padding-bottom: 8px;
-  border-bottom: 1px solid black;
   font-size: 2.3rem;
+}
+.link-nav p,.link-nav a{
+  font-size:20px;
 }
 
 .press-me {
@@ -108,6 +112,14 @@
   margin: 0px 30px;
   font-size: 3rem;
   padding: 0px 10px;
+}
+.introduction-heading p{
+  margin-top:10px;
+  font-size:20px;
+}
+.introduction-heading span{
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .introduction-content {
@@ -301,11 +313,76 @@
 
 /*Mixed Reality style*/
 .mr-section {
-  display: flex;
+  display: flex; /* Use flexbox layout */
 }
 .mr-index {
-  width: 30%;
+  flex: 0 0 30%; /* Set a fixed width of 30% */
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
 }
-.mr-content {
-  width: 70%;
+.mr-index h3{
+  margin-top:10px;
+  text-align: center;
+}
+.mr-content{
+  flex: 1; /* Allow the content section to grow and fill remaining space */
+  padding: 18px 12px;
+  border: 1px solid #ccc;
+}
+.mr-content-title{
+  border-radius: 5px;
+  background-color: #3772a6;
+  color:white;
+  padding: 5px;
+  text-align: center;
+  margin:20px auto;
+  font-size:18px;
+  width:500px;
+}
+.mr-tabs{
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 28px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.mr-index button.active {
+  background-color: #ccc;
+}
+.mr-index button:hover {
+  background-color: #ddd;
+}
+.mr-inner-content{
+  margin:0 20px;
+  transition: opacity 0.5s ease;
+}
+.mr-inner-content ul{
+  margin-bottom:20px;
+  margin-left:20px;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+.steps-title{
+  font-size:18px;
+  margin-bottom:10px;
+}
+/*Reference page */
+.reference-section{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.reference-section h1{
+  margin-bottom:20px;
+  text-align: center;
+}
+.reference-section li{
+  margin-bottom: 20px;
 }

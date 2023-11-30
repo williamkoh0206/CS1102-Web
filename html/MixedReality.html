@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="../css/index.css" />
         <title>Mixed Reality</title>
-      </head>
+    </head>
     <body>
         <div class="nav-bar-wrapper">
             <nav class="topic-nav">
@@ -20,26 +20,58 @@
               <a href="index.html">Home</a>
               <a href="MixedReality.html">Mixed Reality</a>
               <a href="Findings.html">Findings</a>
-              <p>Technique</p>
-              <p>References</p>
+              <a href="technique.html">Technique</a>
+              <a href="references.html">References</a>
             </nav>
-          </div>
-          <div class="page-wrapper">
-            <div class="mr-section">
-                <div class="mr-index">
-                    <h3>Index:</h3>
-                    <ol>
-                        <li>Intro of MR Video</li>
-                        <li>Mix Reality</li>
-                        <li>Impact</li>
-                    </ol>
-                </div>
-                <div class="mr-content">
-                    <h4>MR Video</h4>
-                    <h4>Mix Reality</h4>
-                    <h4>Impact</h4>
+        </div>
+        <div class="page-wrapper">
+          <div class="mr-section">
+              <div class="mr-index">
+                  <h3>Index:</h3>
+                  <button class="mr-tabs" onclick="openMrtabs(event, 'mr-intro')" id="defaultOpen">Introduction of Mixed Reality</button>
+                  <button class="mr-tabs" onclick="openMrtabs(event, 'mr-mixReality-video')">Mix Reality</button>
+                  <button class="mr-tabs" onclick="openMrtabs(event, 'mr-application')">Impact</button>
+              </div>
+              <div id="mr-intro" class="mr-content">
+                <h4 class="mr-content-title">Introduction of Mixed Reality Video</h4>
+                <div class="mr-inner-content" style="opacity: 0">
+                    <video src="../img/MR video.mp4" controls></video>
                 </div>
               </div>
+              <div id="mr-mixReality-video" class="mr-content">
+                <h4 class="mr-content-title">Mix Reality Video</h4>
+                <div class="mr-inner-content" style="opacity: 0">
+                  <video src="../img/MR video.mp4" controls></video>
+                  <h4 class="mr-content-title">Setup</h4>
+                  <h5 class="steps-title">Step1</h5>
+                  <ul>
+                    <li>both device (quest2 and pc) connect wifi to the same wifi</li>
+                    <li>click quest link in quest2 to connect quest to pc</li>
+                  </ul>
+                </div>
+              </div>
+              <div id="mr-application" class="mr-content">
+                <h4 class="mr-content-title">Influence of Mixed Reality</h4>
+                <div class="mr-inner-content" style="opacity: 0">
+                  <ol>
+                    <li>Entertainment Industry</li>
+                    <ul>
+                      <li>Combine immersive environments with real actors captured as 3D holographic assets, as demonstrated in the "Hold the World" project by Factory 42 and Sky</li>                     
+                    </ul>
+                    <li>Education </li>
+                    <ul>
+                      <li>MRC can be used to create interactive and engaging learning experiences by bringing real-world objects and scenarios into VR environments. This allows for the development of educational content that integrates virtual and real-world elements, enhancing the learning experience</li>                     
+                    </ul>
+                    <li>Communication</li>
+                    <ul>
+                      <li>MRC can enhance social interactions in VR by enabling users to capture and share their virtual experiences with real-world elements. This technology allows for the creation of compelling and immersive content that can be shared with others, enriching communication in virtual environments</li>                     
+                    </ul>
+                  </ol>
+                </div>
+            </div>
           </div>
+        </div>
+      <button class="press-me">Press me</button>      
     </body>
+    <script src="../javascript/script.js"></script>
 </html>
