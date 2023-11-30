@@ -193,3 +193,13 @@
   margin-top: 10px;
   width: 80%;
 }
+/*Mixed Reality style*/
+.mr-section{
+  display: flex;
+}
+.mr-index{
+  width: 30%;
+}
+.mr-content{
+  width: 70%;
+}
