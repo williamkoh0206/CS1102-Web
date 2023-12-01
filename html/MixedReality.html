@@ -7,8 +7,13 @@
   <body>
     <div class="nav-bar-wrapper">
       <nav class="topic-nav">
-        <div class="topic-nav-heading">
-          <p>(icon) Mixed Reality Capture</p>
+        <div class="header-section">
+          <div class="header-icon">
+            <img src="../img/virtual-reality-headset-svgrepo-com.svg">
+          </div>
+          <div class="topic-nav-heading">
+            <p>Mixed Reality Capture</p>
+          </div>
         </div>
         <div class="topic-nav-info">
           <p>CS1102 Project (2023-2024 Semester A)</p>
@@ -39,10 +44,10 @@
             class="mr-tabs"
             onclick="openMrtabs(event, 'mr-mixReality-video')"
           >
-            Mix Reality
+            Mixed Reality
           </button>
           <button class="mr-tabs" onclick="openMrtabs(event, 'mr-application')">
-            Impact
+            Impact of Mixed Reality
           </button>
         </div>
         <div id="mr-intro" class="mr-content">
@@ -64,6 +69,62 @@
               ></iframe>
             </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
+            <h4 class="mr-content-title">Environmental Inputs</h4>
+            <div class="mr-intro-content">
+              <div class="mr-description">
+                <p class="mr-intro-heading">Heading Tracking</p>
+                <ol>
+                  <li>
+                    <p>Matching user-predicted head motion
+                    by using a fixed frame of reference to create a
+                    seated experience that respects changes in the
+                    user's head position and head orientation.
+                  </p>
+                  </li>
+                    <li>
+                      <p>The coordinate system provided by the
+                      stationary frame keeps the positions of objects
+                      near the user as stable as possible based on the
+                      real world while taking into account changes in
+                      the position of the user's head.
+                      </p>
+                    </li>
+                </ol>                  
+              </div>
+              <div class="mr-image">
+                <img src="../img/head-tracking.png" width="300px;">
+              </div>            
+            </div>
+            <div class="mr-intro-content">
+              <div class="mr-description">
+                <p class="mr-intro-heading">Scene Understanding</p>
+                <ol>
+                  <li>
+                    <p>Providing mixed reality developers with
+                      a structured, high-level representation
+                      of the environment, designed to make
+                      the development of environment-aware
+                      applications more intuitive.
+                  </p>
+                  </li>
+                    <li>
+                      <p>Scene understanding provides new
+                        structures designed to simplify placing
+                        scenes.
+                      </p>
+                    </li>
+                    <li>
+                      <p>SceneQuads
+                        describe flat surfaces on which
+                        holograms can be placed.
+                      </p>
+                    </li>
+                </ol>                  
+              </div>
+              <div class="mr-image">
+                <img src="../img/scene-understanding.png" width="300px;">
+              </div>            
+            </div>
           </div>
         </div>
         <div id="mr-mixReality-video" class="mr-content">

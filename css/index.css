@@ -34,6 +34,14 @@
 .topic-nav-info {
   text-align: right;
 }
+.header-section{
+  display: flex;
+}
+
+.header-icon img{
+  width: 40px;
+  margin-right: 10px;
+}
 
 .link-nav {
   display: grid;
@@ -362,17 +370,30 @@
   margin:0 20px;
   transition: opacity 0.5s ease;
 }
-.mr-inner-content ul{
+.mr-inner-content ul,.mr-inner-content ol{
   margin-bottom:20px;
   margin-left:20px;
 }
-video {
-  width: 100%;
-  height: auto;
+.mr-inner-content ol p{
+  margin-bottom: 20px;
 }
 .steps-title{
   font-size:18px;
   margin-bottom:10px;
+}
+.mr-intro-heading{
+  font-size:18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.mr-intro-content{
+  display: flex;
+}
+.mr-description{
+  flex: 0 0 70%;
+}
+.mr-image{
+  flex: 1;
 }
 /*Reference page */
 .reference-section{
